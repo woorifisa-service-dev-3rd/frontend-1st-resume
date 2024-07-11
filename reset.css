@@ -19,6 +19,15 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/* Reset a tag styles */
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상 상속 */
+    background-color: transparent; /* 배경 색상 제거 */
+    font: inherit; /* 부모 요소의 폰트 상속 */
+}
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
