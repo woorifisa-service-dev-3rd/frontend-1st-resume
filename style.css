@@ -21,6 +21,7 @@
   width: fit-content;
   height: fit-content;
   padding: 0 16px 0 16px; /* 좌우 padding을 16px로 설정 */
+  animation: fadeIn 2s 1 forwards;
 }
 
 .container_card {
@@ -39,6 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  animation: fadeIn 2s 1 forwards;
 }
 
 .container_divide .container_card {
@@ -139,7 +141,7 @@
   }
 
 .img_tech {
-  height: 16px; /* 높이를 16px로 설정 */
+  height: 1.25rem; /* 높이를 16px로 설정 */
   width: auto; /* 너비를 이미지 비율에 맞게 자동 조정 */
   display: block; /* 블록 요소로 설정하여 높이와 너비가 적용되도록 함 */
 }
@@ -166,4 +168,14 @@
 
 .dot {
     color: #000;
+}
+
+li {
+  display: flex;
+  align-items: center; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
