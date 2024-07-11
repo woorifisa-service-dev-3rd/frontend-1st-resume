@@ -1,0 +1,135 @@
+/* Container */
+
+.container {
+    width: 100%;
+    /* width: 100vw; */
+    max-width: 1920px;
+    min-width: 1024px;
+    margin: 32px auto; /* 상하좌우 margin을 32px로 설정하고 중앙 정렬 */
+    padding-left: 25vw; /* 창 너비의 25%를 패딩으로 설정 */
+    padding-right: 25vw; /* 창 너비의 25%를 패딩으로 설정 */
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 0; /* 작은 화면에서는 패딩 제거 */
+        padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+    }
+}
+
+.container_card {
+    width: 100%;
+    max-width: 719px;
+    margin: 16px auto; /* 상하좌우 margin을 16px로 설정하고 중앙 정렬 */
+    padding-left: 12vw; /* 창 너비의 12%를 패딩으로 설정 */
+    padding-right: 12vw; /* 창 너비의 12%를 패딩으로 설정 */
+    box-sizing: border-box;
+}
+
+@media (max-width: 360px) {
+    .container_divide {
+        padding-left: 0; /* 작은 화면에서는 패딩 제거 */
+        padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+    }
+}
+
+/* Text */
+
+.text_xl {
+    font-size: 60px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 7px;
+}
+
+@media (max-width: 1024px) {
+    .text_xl {
+        font-size: 48px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_l {
+    font-size: 48px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 6px;
+    color: #20C4F4;
+}
+
+@media (max-width: 1024px) {
+    .text_l {
+        font-size: 40px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_l {
+    font-size: 48px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 6px;
+    color: #20C4F4;
+}
+
+@media (max-width: 1024px) {
+    .text_l {
+        font-size: 40px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_m {
+    font-size: 40px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 600; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 5px;
+    color: #0067AC;
+}
+
+@media (max-width: 1024px) {
+    .text_m {
+        font-size: 32px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_s {
+    font-size: 32px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 500; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 4px;
+}
+
+@media (max-width: 1024px) {
+    .text_s {
+        font-size: 24px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.img_profile {
+    width: 100%; /* 이미지가 부모 요소의 너비에 맞게 조절됨 */
+    max-width: 15vw; /* 최대 너비를 15vw로 설정 */
+    aspect-ratio: 3 / 4; /* 비율을 3:4로 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+}
+
+.img_tech {
+    height: 16px; /* 높이를 16px로 설정 */
+    width: auto; /* 너비를 이미지 비율에 맞게 자동 조정 */
+    display: block; /* 블록 요소로 설정하여 높이와 너비가 적용되도록 함 */
+}
+
+.img_card {
+    width: 100%; /* 너비를 부모 요소의 너비에 맞게 설정 */
+    height: 60%; /* 높이를 부모 요소 높이의 60%로 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+}
+
+.img_background {
+    width: 100vw; /* 너비를 뷰포트 너비의 100%로 설정 */
+    height: 30vw; /* 높이를 뷰포트 너비의 30%로 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+}
