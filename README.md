@@ -12,7 +12,7 @@
 <br>
 
 ## Git Pages
-### 최종 페이지 링크 : [Git Pages link](https://woorifisa-service-dev-3rd.github.io/frontend-1st-resume/)
+### [Live Demo](https://woorifisa-service-dev-3rd.github.io/frontend-1st-resume/)
 
 <br>
 
