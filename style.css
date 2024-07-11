@@ -1,0 +1,207 @@
+/* Container */
+
+.container {
+    width: 100%;
+    /* width: 100vw; */
+    max-width: 1920px;
+    min-width: 1024px;
+    margin: 32px auto; /* 상하좌우 margin을 32px로 설정하고 중앙 정렬 */
+    padding-left: 25vw; /* 창 너비의 25%를 패딩으로 설정 */
+    padding-right: 25vw; /* 창 너비의 25%를 패딩으로 설정 */
+    box-sizing: border-box;
+    scroll-snap-align: start; /* 스크롤 스냅 포인트 설정 */
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 0; /* 작은 화면에서는 패딩 제거 */
+        padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+    }
+}
+
+.container_content {
+    width: fit-content;
+    height:fit-content;
+}
+
+.container_card {
+    width: 100%;
+    max-width: 360px;
+    margin: 16px auto; /* 상하좌우 margin을 16px로 설정하고 중앙 정렬 */
+    /* padding-left: 12vw; 
+    padding-right: 12vw; */
+    /* box-sizing: border-box; */
+}
+
+.container_divide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.container_divide .container_card {
+    flex: 1 1 calc(50% - 32px); /* 2열 배치, 16px 간격을 감안하여 너비 설정 */
+}
+
+@media (max-width: 360px) {
+    .container_divide {
+        padding-left: 0; /* 작은 화면에서는 패딩 제거 */
+        padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+    }
+}
+
+.img_background_container {
+    position: relative;
+}
+
+/* Scroll Container */
+.container_scroll {
+    scroll-snap-type: y mandatory; /* 세로 방향 스크롤 스냅 설정 */
+    overflow-y: scroll;
+    height: 100vh;
+    position: relative;
+}
+
+/* Fade in/out effect */
+.container_scroll::before,
+.container_scroll::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 15%;
+    pointer-events: none; /* 포인터 이벤트를 무시하여 투명한 영역이 클릭되지 않도록 함 */
+    z-index: 1;
+}
+
+.container_scroll::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.container_scroll::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+
+
+/* Text */
+
+.text_xl {
+    font-size: 60px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 7px;
+}
+
+@media (max-width: 1024px) {
+    .text_xl {
+        font-size: 48px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_l {
+    font-size: 48px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 6px;
+    color: #20C4F4;
+}
+
+@media (max-width: 1024px) {
+    .text_l {
+        font-size: 40px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_l {
+    font-size: 48px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 6px;
+    color: #20C4F4;
+}
+
+@media (max-width: 1024px) {
+    .text_l {
+        font-size: 40px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_m {
+    font-size: 40px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 600; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 5px;
+    color: #0067AC;
+}
+
+@media (max-width: 1024px) {
+    .text_m {
+        font-size: 32px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_s {
+    font-size: 32px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 500; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 4px;
+}
+
+@media (max-width: 1024px) {
+    .text_s {
+        font-size: 24px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.text_xs {
+    font-size: 24px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 400; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 3px;
+}
+
+@media (max-width: 1024px) {
+    .text_xs {
+        font-size: 20px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
+.img_profile {
+    width: 100%; /* 이미지가 부모 요소의 너비에 맞게 조절됨 */
+    max-width: 10vw; /* 최대 너비를 15vw로 설정 */
+    aspect-ratio: 3 / 4; /* 비율을 3:4로 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    transform: translateY(-50%);
+    border-radius: 10%;
+}
+
+.img_tech {
+    height: 16px; /* 높이를 16px로 설정 */
+    width: auto; /* 너비를 이미지 비율에 맞게 자동 조정 */
+    display: block; /* 블록 요소로 설정하여 높이와 너비가 적용되도록 함 */
+}
+
+.img_card {
+    width: 100%; /* 너비를 부모 요소의 너비에 맞게 설정 */
+    height: 60%; /* 높이를 부모 요소 높이의 60%로 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+}
+
+.img_background {
+    width: 100vw; /* 너비를 뷰포트 너비의 100%로 설정 */
+    height: 30vw; /* 높이를 뷰포트 너비의 30%로 설정 */
+    object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+    position: relative; /* 포지션을 상대적으로 설정 */
+}
