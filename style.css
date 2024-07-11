@@ -3,7 +3,6 @@
 .container {
   width: 100%;
   max-width: 1920px;
-  min-width: 1024px;
   margin: 16px 0 32px 0; /* 상하좌우 margin을 32px로 설정하고 중앙 정렬 */
   padding-left: 25%; /* 창 너비의 25%를 패딩으로 설정 */
   padding-right: 25%; /* 창 너비의 25%를 패딩으로 설정 */
@@ -11,27 +10,30 @@
   scroll-snap-align: start; /* 스크롤 스냅 포인트 설정 */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
   .container {
-    padding-left: 0; /* 작은 화면에서는 패딩 제거 */
-    padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+    padding-left: 10%; /* 작은 화면에서는 패딩 제거 */
+    padding-right: 10%; /* 작은 화면에서는 패딩 제거 */
   }
 }
 
 .container_content {
-  width: 100%;
+  width: fit-content;
   height: fit-content;
-  margin: 0 16px 0 16px; /* 좌우 padding을 16px로 설정 */
+  padding: 0 16px 0 16px; /* 좌우 padding을 16px로 설정 */
 }
 
 .container_card {
   width: 100%;
   max-width: 360px;
-  margin: 16px auto; /* 상하좌우 margin을 16px로 설정하고 중앙 정렬 */
-  /* padding-left: 12vw; 
-    padding-right: 12vw; */
-  /* box-sizing: border-box; */
+  margin: 16px auto;
 }
+
+@media (max-width: 1600px) {
+    .container_divide .container_card {
+        max-width: 80%;
+    }
+  }
 
 .container_divide {
   display: flex;
@@ -40,16 +42,18 @@
 }
 
 .container_divide .container_card {
+    width: 100%;
   flex: 1 1 calc(50% - 32px); /* 2열 배치, 16px 간격을 감안하여 너비 설정 */
   margin: 0 16px 0 16px; /* 좌우 margin을 16px로 설정 */
 }
 
-@media (max-width: 360px) {
-  .container_divide {
-    padding-left: 0; /* 작은 화면에서는 패딩 제거 */
-    padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+@media (max-width: 700px) {
+    .container_divide {
+      padding-left: 0; /* 작은 화면에서는 패딩 제거 */
+      padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+      flex-direction: column; /* 세로 방향으로 배치 */
+    }
   }
-}
 
 .img_background_container {
   position: relative;
@@ -124,6 +128,15 @@
   transform: translateY(-50%);
   border-radius: 10%;
 }
+
+@media (max-width: 1600px) {
+    .img_profile {
+        position: absolute;
+        top: 100%;
+        left: 85%;
+        transform: translateY(-50%);
+    }
+  }
 
 .img_tech {
   height: 16px; /* 높이를 16px로 설정 */
