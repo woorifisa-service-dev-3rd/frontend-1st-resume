@@ -11,6 +11,11 @@
 
 <br>
 
+## Git Pages
+### 최종 페이지 링크 : [Git Pages link](https://woorifisa-service-dev-3rd.github.io/frontend-1st-resume/)
+
+<br>
+
 ## 🎨 UI 스타일 가이드
 ### Figma의 [ConcreteDesign System](https://www.figma.com/community/file/1199986353366991625) 참고
 - <h3>LayOut Grids 📏</h3>
@@ -115,11 +120,6 @@
 
     <img src="./src/img/prototype2_img.png" width="460" height="700"/>
 
-<br>
-
-
-## Git Pages
-### [Git Pages link](https://woorifisa-service-dev-3rd.github.io/frontend-1st-resume/)
 
 <br>
 
@@ -127,7 +127,6 @@
 
 ### 개선 전
 <img src="./src/img/lighthouse1.png" width="600" height="600"/>
-<br>
 <br>
 
 ### 개선 후
