@@ -21,6 +21,7 @@
   width: fit-content;
   height: fit-content;
   padding: 0 16px 0 16px; /* 좌우 padding을 16px로 설정 */
+  animation: fadeIn 2s 1 forwards;
 }
 
 .container_card {
@@ -39,6 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  animation: fadeIn 2s 1 forwards;
 }
 
 .container_divide .container_card {
@@ -171,4 +173,9 @@
 li {
   display: flex;
   align-items: center; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
