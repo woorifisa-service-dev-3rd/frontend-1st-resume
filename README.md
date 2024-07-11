@@ -115,4 +115,20 @@
 
     <img src="./src/img/prototype2_img.png" width="460" height="700"/>
 
+<br>
 
+
+## Git Pages
+### [Git Pages link](https://woorifisa-service-dev-3rd.github.io/frontend-1st-resume/)
+
+<br>
+
+## Lighthouse
+
+### 개선 전
+<img src="./src/img/lighthouse1.png" width="600" height="600"/>
+<br>
+<br>
+
+### 개선 후
+<img src="./src/img/lighthouse2.png" width="600" height="600"/>
