@@ -18,13 +18,28 @@
     }
 }
 
+.container_content {
+    width: fit-content;
+    height:fit-content;
+}
+
 .container_card {
     width: 100%;
-    max-width: 719px;
+    max-width: 360px;
     margin: 16px auto; /* 상하좌우 margin을 16px로 설정하고 중앙 정렬 */
-    padding-left: 12vw; /* 창 너비의 12%를 패딩으로 설정 */
-    padding-right: 12vw; /* 창 너비의 12%를 패딩으로 설정 */
-    box-sizing: border-box;
+    /* padding-left: 12vw; 
+    padding-right: 12vw; */
+    /* box-sizing: border-box; */
+}
+
+.container_divide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.container_divide .container_card {
+    flex: 1 1 calc(50% - 32px); /* 2열 배치, 16px 간격을 감안하여 너비 설정 */
 }
 
 @media (max-width: 360px) {
@@ -33,6 +48,12 @@
         padding-right: 0; /* 작은 화면에서는 패딩 제거 */
     }
 }
+
+.img_background_container {
+    position: relative;
+}
+
+
 
 /* Text */
 
@@ -109,11 +130,30 @@
     }
 }
 
+.text_xs {
+    font-size: 24px; /* 기본 폰트 크기 */
+    line-height: 1.2; /* 글꼴 크기에 맞춘 줄 간격 */
+    font-weight: 400; /* Bold */
+    letter-spacing: 0.25px;
+    padding: 3px;
+}
+
+@media (max-width: 1024px) {
+    .text_xs {
+        font-size: 20px; /* 창 너비가 작아질 때 폰트 크기 조절 */
+    }
+}
+
 .img_profile {
     width: 100%; /* 이미지가 부모 요소의 너비에 맞게 조절됨 */
-    max-width: 15vw; /* 최대 너비를 15vw로 설정 */
+    max-width: 10vw; /* 최대 너비를 15vw로 설정 */
     aspect-ratio: 3 / 4; /* 비율을 3:4로 설정 */
     object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    transform: translateY(-50%);
+    border-radius: 10%;
 }
 
 .img_tech {
@@ -132,4 +172,5 @@
     width: 100vw; /* 너비를 뷰포트 너비의 100%로 설정 */
     height: 30vw; /* 높이를 뷰포트 너비의 30%로 설정 */
     object-fit: cover; /* 이미지가 비율을 유지하면서 전체 영역을 채우도록 설정 */
+    position: relative; /* 포지션을 상대적으로 설정 */
 }

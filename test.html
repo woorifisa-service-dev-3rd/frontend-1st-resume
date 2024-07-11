@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Test Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Image Background -->
+    <div class="img_background_container">
+      <img src="./000025.JPG" alt="Background Image" class="img_background" />
+      <!-- <h2 class="text_l">Background Image</h2> -->
+      <img src="./증명.jpg" alt="Profile Image" class="img_profile" />
+    </div>
     <!-- Container -->
     <div class="container">
-        <h1 class="text_xl">This is XL Text</h1>
+      <div class="container_content">
+        <p class="text_xl">This is XL Text</p>
         <p class="text_l">This is L Text</p>
         <p class="text_m">This is M Text</p>
         <p class="text_s">This is S Text</p>
-        <img src="path/to/your/profile-image.jpg" alt="Profile Image" class="img_profile">
+        <p class="text_xs">This is XS Text</p>
+      </div>
+      <!-- Container Divide -->
+      <div class="container_divide">
+        <div class="container_card">
+          <h2 class="text_xl">Card Title 1</h2>
+          <img src="path/to/your/card-image.jpg" alt="Card Image 1" class="img_card" />
+          <p class="text_l">Card Description 1</p>
+        </div>
+        <div class="container_card">
+          <h2 class="text_xl">Card Title 2</h2>
+          <img src="path/to/your/card-image.jpg" alt="Card Image 2" class="img_card" />
+          <p class="text_l">Card Description 2</p>
+        </div>
+      </div>
     </div>
 
     <!-- Container Card -->
-    <div class="container_card">
-        <h2 class="text_xl">Card Title</h2>
-        <img src="path/to/your/card-image.jpg" alt="Card Image" class="img_card">
-        <p class="text_l">Card Description</p>
-    </div>
-
-    <!-- Image Background -->
-    <div class="img_background" style="background-image: url('path/to/your/background-image.jpg');">
-        <h2 class="text_l">Background Image</h2>
-    </div>
+    <!-- <div class="container_card">
+      <h2 class="text_xl">Card Title</h2>
+      <img src="path/to/your/card-image.jpg" alt="Card Image" class="img_card" />
+      <p class="text_l">Card Description</p>
+    </div> -->
 
     <!-- Tech Image -->
     <div>
-        <img src="path/to/your/tech-image.jpg" alt="Tech Image" class="img_tech">
+      <img src="path/to/your/tech-image.jpg" alt="Tech Image" class="img_tech" />
     </div>
-</body>
+  </body>
 </html>
