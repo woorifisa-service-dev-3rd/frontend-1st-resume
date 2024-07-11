@@ -20,14 +20,14 @@
 
 - <h3>Typography 📝 - Display Text(Fluid 사용)</h3>
 
-    <img src="image-1.png" width="650" height="700"/>
+    <img src="./src/img/image-1.png" width="650" height="700"/>
 
     - 글씨 크기에 따른 `FontSize` 조정
     - 글씨 크기에 따른 `Padding` 추가
 
 - <h3>Font Color 🖍️ - 우리은행 CI 색상 사용</h3>
 
-    ![Alt text](image-2.png)
+    ![Alt text](./src/img/image-2.png)
     제목 1 : BLACK (`000000`)<br>
     제목 2 : WOORI LIGHT BLUE (`20C4F4`)<br>
     제목 3 : WOORI DEEP BLUE (`0067AC`)<br>
@@ -63,16 +63,18 @@
     - `dev`
     - `feature/{작업단위}`
 
+
 - <h3>Commit Rule 🔃</h3> 
 
     - [Gitmoji](https://gitmoji.dev/) 사용 연습하기
     - 작업 내용 요약
 
+
 ## 🤖 Prototype
 - Resume Main Page
 
-    <img src="image-4.png" width="450" height="700"/>
+    <img src="./src/img/image-4.png" width="460" height="700"/>
 
 - Project Page
 
-    <img src="image-5.png" width="450" height="700"/>
+    <img src="./src/img/image-5.png" width="460" height="700"/>
