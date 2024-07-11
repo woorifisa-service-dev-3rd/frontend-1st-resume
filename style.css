@@ -9,6 +9,7 @@
     padding-left: 25vw; /* 창 너비의 25%를 패딩으로 설정 */
     padding-right: 25vw; /* 창 너비의 25%를 패딩으로 설정 */
     box-sizing: border-box;
+    scroll-snap-align: start; /* 스크롤 스냅 포인트 설정 */
 }
 
 @media (max-width: 1024px) {
@@ -51,6 +52,36 @@
 
 .img_background_container {
     position: relative;
+}
+
+/* Scroll Container */
+.container_scroll {
+    scroll-snap-type: y mandatory; /* 세로 방향 스크롤 스냅 설정 */
+    overflow-y: scroll;
+    height: 100vh;
+    position: relative;
+}
+
+/* Fade in/out effect */
+.container_scroll::before,
+.container_scroll::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 15%;
+    pointer-events: none; /* 포인터 이벤트를 무시하여 투명한 영역이 클릭되지 않도록 함 */
+    z-index: 1;
+}
+
+.container_scroll::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.container_scroll::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 
