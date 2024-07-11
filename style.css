@@ -1,3 +1,10 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
 /* Container */
 
 .container {
@@ -31,10 +38,10 @@
 }
 
 @media (max-width: 1600px) {
-    .container_divide .container_card {
-        max-width: 80%;
-    }
+  .container_divide .container_card {
+    max-width: 80%;
   }
+}
 
 .container_divide {
   display: flex;
@@ -44,18 +51,18 @@
 }
 
 .container_divide .container_card {
-    width: 100%;
+  width: 100%;
   flex: 1 1 calc(50% - 32px); /* 2열 배치, 16px 간격을 감안하여 너비 설정 */
   margin: 0 16px 0 16px; /* 좌우 margin을 16px로 설정 */
 }
 
 @media (max-width: 700px) {
-    .container_divide {
-      padding-left: 0; /* 작은 화면에서는 패딩 제거 */
-      padding-right: 0; /* 작은 화면에서는 패딩 제거 */
-      flex-direction: column; /* 세로 방향으로 배치 */
-    }
+  .container_divide {
+    padding-left: 0; /* 작은 화면에서는 패딩 제거 */
+    padding-right: 0; /* 작은 화면에서는 패딩 제거 */
+    flex-direction: column; /* 세로 방향으로 배치 */
   }
+}
 
 .img_background_container {
   position: relative;
@@ -132,13 +139,13 @@
 }
 
 @media (max-width: 1600px) {
-    .img_profile {
-        position: absolute;
-        top: 100%;
-        left: 85%;
-        transform: translateY(-50%);
-    }
+  .img_profile {
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    transform: translateY(-50%);
   }
+}
 
 .img_tech {
   height: 1.25rem; /* 높이를 16px로 설정 */
@@ -167,15 +174,19 @@
 }
 
 .dot {
-    color: #000;
+  color: #000;
 }
 
 li {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
